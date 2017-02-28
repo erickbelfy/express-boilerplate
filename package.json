@@ -38,6 +38,7 @@
     "validate-commit-msg": "^2.11.1"
   },
   "dependencies": {
+    "bluebird": "3.4.7",
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.1",
