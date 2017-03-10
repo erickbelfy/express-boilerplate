@@ -8,6 +8,9 @@ import APIError from '../helpers/APIError';
  * TODO ERICKBELFY doc
  */
 
+// plugin bluebird promise in mongoose
+mongoose.Promise = Promise;
+
 const UserSchema = new mongoose.Schema({
 
   username: {
