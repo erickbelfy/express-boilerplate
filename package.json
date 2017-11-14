@@ -1,7 +1,7 @@
 {
   "name": "express-boilerplate",
   "version": "0.0.1",
-  "description": "simple stack to make it work",
+  "description": "Simple stack that allows you start your expressJS application in a second.",
   "main": "/src/index.js",
   "engines": {
     "node": ">=4.8.0",
@@ -10,11 +10,11 @@
   },
   "scripts": {
     "start": "gulp serve",
-    "start:debug": "cross-env DEBUG=express-mongoose-es6-rest-api:* yarn start",
+    "start:debug": "cross-env DEBUG=express-boilerplate:* yarn start",
     "build": "gulp",
     "lint": "esw *.js server config --color",
     "lint:watch": "yarn lint -- --watch",
-    "precommit": "yarn lint && yarn test",
+    "precommit": "yarn lint",
     "commitmsg": "validate-commit-msg",
     "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha --ui bdd --reporter spec --colors --compilers js:babel-core/register server/tests --recursive",
     "test:watch": "yarn test -- --watch",
